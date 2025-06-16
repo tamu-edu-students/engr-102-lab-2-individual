@@ -1,7 +1,7 @@
 # ENGR 102 Lab Topic 2 (individual)
 
 ## Activities
-This lab consists of three individual activities. Please submit the following files to Gradescope. Check out the [Frequently Asked Questions](#frequently-asked_questions) below. **Please include the individual header in your ~.py files.**
+This lab consists of three individual activities. Please submit the following files to Gradescope. Check out the [Frequently Asked Questions](#frequently-asked-questions) below. **Please include the individual header in your ~.py files.**
 
 1. [Using Variables](#using-variables)
 2. [More Linear Interpolation](#more-linear-interpolation)
@@ -108,6 +108,7 @@ y2 = 14.383561643835616 m
 z2 = 7.698630136986301 m
 ```
 </li>
+</ol>
 
 ## Python Code Soup
 Create a program named `python_code_soup.py` consisting of **only** the following lines of code to produce the output shown below. You may put these lines of code in any order, and can re-use the lines as much as you want. There is more than one way to achieve the result – try to see if you can obtain the output using fewer lines of code. **Hint**: you can only print `z` to the screen, so you have to build the value of `z` that you want using the other statements, then print `z`.
@@ -146,7 +147,12 @@ Note: The fourth line is 10<sup>14</sup>
 
 
 ## Frequently Asked Questions
+1. **Do I have to add comments to my code?** YES! Comments are how you communicate to your future self and to others. It also helps us follow your thinking process and makes it easier to grade and give feedback. Plus, you'll lose points on assignments if you don't comment your code!
+2. **Can I use stuff we haven't learned yet?** Yes and no. If you understand how to use concepts we haven't covered yet (loops, etc) and can do so correctly, feel free to use them on the labs, unless stated otherwise. However, if you're pulling code snippets from somewhere and don't fully understand what you're doing, it's better not to. All of the lab assignments are written so that you only need concepts we have covered so far in class. If you're struggling to figure out how to do a problem, ask during class for help. *Also, if you use concepts we haven't covered yet on a team assignment, make sure EVERYONE on your team understands it.*
+3. **Activity 2 part 2, what points do I use for linear interpolation?** Use the same points that you did in part 1. Actually, START with your code from part 1 and add/modify for part 2!
+4. **Activity 3 Gradescope says I didn't use only the given lines of code. What did I do wrong?** Look at the failed testcase and look at the feedback. It should have `not allowed: <line of code>`, that's the line that you need to remove. It's okay to have blank lines, `#` style comments, or extra spaces, but make sure you remove any triple quote strings or lines not present in the template.
 
+Have a question you don't see here? Email your instructor!
 
 
 Based upon Dr. Keyser’s Original<br/>
