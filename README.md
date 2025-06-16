@@ -65,7 +65,49 @@ Change of velocity is 571.4470689735155 m/s
 
 
 ## More Linear Interpolation
-description
+In the team lab, your team put together a program that interpolated between two position values based on the time values when each positon was observed. This was a one-dimensional (1D) interpolation, since you were interpolating only a single value, the distance traveled by the ISS. You are now going to extend that program to one that will linearly interpolate between two points in 3D. Let’s say we are tracking the change of a satellite’s position with time. So, at time t0 the position is (x0, y0, z0) and at time t2 the position is (x2, y2, z2). What is the position (x1, y1, z1) at some time t1 between t0 and t2?
+
+Refer again to the Linear Interpolation material associated with the team lab (posted on Canvas). That material describes the development of the equation representing linear interpolation of a dependent variable y versus an independent variable x. For the current problem, what varies linearly with what? What are the dependent variable(s)?  What are the independent variable(s)?
+
+Let’s assume that each of the position variables (x, y, z) varies linearly with time (t). Therefore, time (t) is the independent variable in each case. This means we can perform linear interpolation three separate times to get what we need. This can be done in three steps: 1) linearly interpolate between (t0, x0) and (t2, x2) for t1 with x1 as the result; 2) repeat for (t0, y0) and (t2, y2) for t1 with y1 as the result; 3) repeat for (t0, z0) and (t2, z2) for t1 with z1 as the result. The result will be (x1, y1, z1) associated with time t1.
+
+<ol>
+<li>Write a program named <code>more_linear_interpolation.py</code> that will take two observed 3D positions at two points in time, and then will calculate the 3D position at a third point in time. Let’s consider only times between the two observed times. You should output the x, y, and z values for that position on separate lines. Begin by identifying the variables you will use, the names for those variables, and the computations that should occur for those variables. Then, write a program that will output the 3D position of the interpolated point on 3 separate lines.
+
+For this initial program, use the following data values:
+- At time 12 seconds, observed position was (8, 6, 7) meters
+- At time 85 seconds, observed position was (-5, 30, 9) meters
+- You want to find the position at time 30 seconds
+
+Example output:
+```
+At time 30.0 seconds:
+x1 = 4.794520547945206 m
+y1 = 11.917808219178081 m
+z1 = 7.493150684931507 m
+```
+</li>
+<li>Now, add to your file <code>more_linear_interpolation.py</code> from above. Modify your program in the following ways:
+<ul>
+    <li>When printing the position, follow the output by a line of dashes (“<code>-----------------------</code>”).</li>
+    <li>Instead of just computing the interpolation at one point and printing the result, you will now compute it at 5 points. You may copy and paste the portion of your code that is needed to recompute interpolation 5 times. </li>
+    <li>Create variables for the <strong>starting</strong> time of interpolation, and the <strong>ending</strong> time of interpolation. Display the results from interpolating at 5 points, <strong>evenly spaced</strong> from the beginning time to the ending time, inclusive.</li>
+    <li>Interpolate, starting at time 30 seconds and ending at time 60 seconds, printing the result each time. The line of dashes will separate each computation. (<strong>Note:</strong> later we will see how we can do this more efficiently, without copying-and-pasting code, but for now, copy-and-paste your code.)</li>
+</ul>
+
+Example output (first two times only):
+```
+At time 30.0 seconds:
+x1 = 4.794520547945206 m
+y1 = 11.917808219178081 m
+z1 = 7.493150684931507 m
+-----------------------
+At time 37.5 seconds:
+x2 = 3.4589041095890414 m
+y2 = 14.383561643835616 m
+z2 = 7.698630136986301 m
+```
+</li>
 
 ## Python Code Soup
 description
