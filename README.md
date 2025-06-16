@@ -110,7 +110,40 @@ z2 = 7.698630136986301 m
 </li>
 
 ## Python Code Soup
-description
+Create a program named `python_code_soup.py` consisting of **only** the following lines of code to produce the output shown below. You may put these lines of code in any order, and can re-use the lines as much as you want. There is more than one way to achieve the result – try to see if you can obtain the output using fewer lines of code. **Hint**: you can only print `z` to the screen, so you have to build the value of `z` that you want using the other statements, then print `z`.
+
+```python
+x = 1
+y = 10
+z = 0
+x = y
+x += 1
+y += x
+y *= x
+z += x
+z += y
+print(z)
+```
+You may also use blank lines and `#` style comments in your code (including the header), **everything else will be marked as “not allowed”**
+
+For example, say that you wanted to print the number `1` to the screen. The following lines would do the trick:
+```python
+z = 0
+x = 1
+z += x
+print(z)
+```
+
+Your program should print out the following, when run:
+```
+1
+29
+102
+100000000000000
+8675
+```
+Note: The fourth line is 10<sup>14</sup>
+
 
 ## Frequently Asked Questions
 
