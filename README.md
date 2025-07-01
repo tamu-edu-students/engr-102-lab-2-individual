@@ -8,7 +8,7 @@ This lab consists of three individual activities. Please submit the following fi
 3. [Python Code Soup](#python-code-soup)
 
 ## Using Variables
-Convert your program from Lab: Topic 1 Activity #2 (Print Math) to a new program named `using_variables.py` that produces identical output. However, for all of the calculations, you are to instead create variables for all values that are either constants or are values that might vary in the calculation.
+Convert your program from [Lab: Topic 1 Activity #2 (Print Math)](https://github.com/tamu-edu-students/engr-102-lab-1?tab=readme-ov-file#print-math) to a new program named `using_variables.py` that produces identical output. However, for all of the calculations, you are to instead create variables for all values that are either constants or are values that might vary in the calculation.
 
 Recall the following example from Lab Topic 1:</br>
 New code:	
