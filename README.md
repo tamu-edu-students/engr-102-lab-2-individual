@@ -110,6 +110,8 @@ z2 = 7.698630136986301 m
 </li>
 </ol>
 
+**Note:** Just like the team lab, use the following equation for linear interpolation: $$y = (slope)(x - x1) + y1$$
+
 ## Python Code Soup
 Create a program named `python_code_soup.py` consisting of **only** the following lines of code to produce the output shown below. You may put these lines of code in any order, and can re-use the lines as much as you want. There is more than one way to achieve the result – try to see if you can obtain the output using fewer lines of code. **Hint**: you can only print `z` to the screen, so you have to build the value of `z` that you want using the other statements, then print `z`.
 
